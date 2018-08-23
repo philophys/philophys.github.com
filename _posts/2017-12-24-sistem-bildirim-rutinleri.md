@@ -1,5 +1,6 @@
 ---
 title: Sistem Bildirim Rutinlerinin Özeti
+categories: Bilgisayar
 ---
 
 Selamlar.
