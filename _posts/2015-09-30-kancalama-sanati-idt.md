@@ -1,5 +1,6 @@
 ---
 title: Kancalama Sanatı - IDT
+categories: Bilgisayar
 ---
 
 Selamlar.
