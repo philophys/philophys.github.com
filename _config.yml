@@ -6,7 +6,7 @@ permalink: /posts/:title
 kramdown:
   input: GFM
 
-disqus_shortname: 
+disqus_shortname: ring0
 
 plugins:
   - jekyll-sitemap
