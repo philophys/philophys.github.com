@@ -1,5 +1,6 @@
 ---
 title: APC nedir? Nasıl kullanılır?
+categories: Bilgisayar
 ---
 
 Selamlar
