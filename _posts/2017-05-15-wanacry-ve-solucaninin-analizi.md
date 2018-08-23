@@ -1,5 +1,6 @@
 ---
-title: Wanacry ve solucanının minik bir analizi 
+title: Wanacry ve Solucanının Minik Bir Analizi
+categories: Bilgisayar
 ---
 
 Selamlar. Ben bu yazıyı size otobüs terminalinde beklediğim sırada yazarken aynı zamanda dünyada sağda solda sürekli konuşulan bir zararlı yazılım yayılmaya devam ediyor. Bu yazı da onun nasıl yayıldığının kısa ve küçük bir teknik analizi niteliğinde. O kadar ki haber sitelerine falan düşmüş artık konu, efendim işte bilmem ne tarihinin en güçlü siber saldırısı gibi lanse edilmiş fakat bunlar sadece haber sitelerin her konuda yaptığı abartmalardan ibaret kanımca. Çünkü esasen biraz bilinçli bir kullanıcı olmak hemen hemen bir çok zararlı karşısında size yeterli korumayı sağlıyor ayrıca teknik olarak da fidye yazılımı kısmının çok abartılacak bir yanı yok ama sömürgeç(exploit) kesinlikle hoş diyebiliriz. Bu arada, evet eğer olayı bir anda bir çok yeri etkileyebilmesi açısından düşünürseniz ciddi bir zararlı. Ayrıca benim dilim yanmadığı için de konuşmak biraz kolay oluyor fakat arşivlerim şifrelense herhalde ben de çıldırma durumuna gelebilirim...
