@@ -1,5 +1,6 @@
 ---
-title: Windows Çekirdeğini Çıtlatıyoruz - Yığın Taşması 
+title: Windows Çekirdeğini Çıtlatıyoruz - Yığın Taşması
+categories: Bilgisayar
 ---
 
 Selamlar. Bu yazı tahminimce en az 4, en fazla 7 yazıdan oluşan ve genel çerçeve olarak Windows çekirdeğinde "*exploit*"[^1] geliştirmekten bahseden bir yazı dizisinin ilk yazısı olacak inşallah. Yazı boyunca epey sevimli olan ve yabancı bir kardeşimizin hazırladığı [HEVD](https://github.com/hacksysteam/HackSysExtremeVulnerableDriver) isimli sürücü üzerinden Windows çekirdeğini çitlemeyi hep birlikte öğrenmeye çalışacağız.
