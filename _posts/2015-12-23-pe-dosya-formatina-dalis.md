@@ -1,5 +1,6 @@
 ---
 title: PE Dosya Formatına Dalış
+categories: Bilgisayar
 ---
 
 Selamlar.
