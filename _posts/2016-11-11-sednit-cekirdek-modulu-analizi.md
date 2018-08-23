@@ -1,5 +1,6 @@
 ---
 title: Sednit Çekirdek Modülü Analizi
+categories: Bilgisayar
 ---
 
 Selamlar.
