@@ -1,5 +1,6 @@
 ---
 title: GCHQ Soru Çözümleri
+categories: Bilgisayar
 ---
 
 Selamlar
