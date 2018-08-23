@@ -1,5 +1,6 @@
 ---
-title: Heap hakkında notlar
+title: Heap Hakkında Notlar
+categories: Bilgisayar
 ---
 
 Merhaba.
