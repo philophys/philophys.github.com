@@ -1,5 +1,6 @@
 ---
 title: ÇMHA Tespiti İçin Minik Bir Yöntem
+categories: Bilgisayar
 ---
 
 Selamlar,
