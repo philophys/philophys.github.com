@@ -1,5 +1,6 @@
 ---
 title: İş Öğelerini Listeleme ve Windbg TM
+categories: Bilgisayar
 ---
 
 Selamlar
