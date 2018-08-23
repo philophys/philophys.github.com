@@ -1,5 +1,6 @@
 ---
 title: TLS yapısı ve kullanımı
+categories: Bilgisayar
 ---
 
 Selamlar
