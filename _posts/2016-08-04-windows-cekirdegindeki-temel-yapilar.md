@@ -1,5 +1,6 @@
 ---
 title: Windows Çekirdeğindeki Bazı Temel Veri Yapıları
+categories: Bilgisayar
 ---
 
 Selamlar.
