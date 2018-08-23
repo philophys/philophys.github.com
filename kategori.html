@@ -8,7 +8,20 @@ title: Kategoriler
 		<h1 class="smallcap"><a class="site-title" href="{{ '/' | prepend: site.baseurl | prepend: site.url }}">{{ site.title }}</a></h1>
 		<p>Tüm etiketlere aşağıdan ulaşabilirsiniz.</p>
 	</section>
-
+	<section>
+		{% for tag in site.categories %}
+		<h3 class="tag-title" id="{{ tag | slugify }}"># {{ tag }}</h3>
+		<ul class="post-list">
+			{% for post in site.posts %}
+	    {% if post.categories contains tag %}
+			<li>
+				<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+			</li>
+			{% endif %}
+	    {% endfor %}
+		</ul>
+		{% endfor %}
+	</section>
 	
 
 </div>
