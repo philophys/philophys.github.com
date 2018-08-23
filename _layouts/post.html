@@ -17,9 +17,9 @@ layout: default
   		{% if post.tags.size > 0 %}
 
   		{% assign tags_content = "" %}
-  		{% for post_tag in post.tags %}
+  		{% for post_tag in post.categories %}
   			{% capture tags_content_temp %}
-  				{{ tags_content }}<a href="{{ site.url }}{{ site.baseurl }}/etiket#{{ post_tag | slugify }}">#{{ post_tag }}</a>
+  				{{ tags_content }}<a href="{{ site.url }}{{ site.baseurl }}/kategori#{{ post_tag | slugify }}">#{{ post_tag }}</a>
   			{% endcapture %}
   			{% assign tags_content = tags_content_temp %}
   		{% endfor %}
