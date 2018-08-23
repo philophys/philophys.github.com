@@ -1,5 +1,6 @@
 ---
 title: Kancalama Sanatı - SSDT
+categories: Bilgisayar
 ---
 
 Selamlar.
