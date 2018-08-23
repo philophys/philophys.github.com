@@ -1,5 +1,6 @@
 ---
 title: WÇÇ - NULL Gösterici Çağırımı
+categories: Bilgisayar
 ---
 
 Serinin ikinci yazısından tüm okuyuculara selamlar. Önceki yazıda bahsi geçen yazı dizisinin bu ikinci yazısında `NULL` değerine sahip bir gösterici çağırıldığında ortaya çıkan bir zafiyet türünü inceleyip "*exploit*" geliştireceğiz. Bu yazıda da tıpkı öncekinde olduğu gibi ilerleyelim, o halde öncelikle zafiyete sebep olan kısmı bi görelim...
