@@ -9,15 +9,14 @@ title: Kategoriler
 		<p>Tüm etiketlere aşağıdan ulaşabilirsiniz.</p>
 	</section>
 	<section>
-		{% for tag in site.categories %}
-		<h3 class="tag-title" id="{{ tag | slugify }}"># {{ tag }}</h3>
+		{% for category in site.categories %}
+		{% capture category_name %}{{ category | first }}{% endcapture %}
+		<h3 class="tag-title" id="#{{ category_name | slugize }}"># {{ category_name }}</h3>
 		<ul class="post-list">
-			{% for post in site.posts %}
-	    {% if post.categories contains tag %}
+			{% for post in site.categories[category_name] %}
 			<li>
 				<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
 			</li>
-			{% endif %}
 	    {% endfor %}
 		</ul>
 		{% endfor %}
