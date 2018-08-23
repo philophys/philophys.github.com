@@ -1,5 +1,6 @@
 ---
 title: KVM sanal makine gizleme
+categories: Bilgisayar
 ---
 
 Selamlar. Bir süredir bilgisayarımdaki taban işletim sistemi olarak tekrar Linux kullanmaya başladım. Her ne kadar esas olarak Windows ile uğraşıyor olsam da Linux'un kullananı devingen bir halde tutuyor oluşu her zaman hoşuma gitmiştir. Fakat Windows ile ilgili uğraşlarımı devam ettirebilmek için mecburen Windows bir sanal makineye de ihtiyaç duyuyorum.
