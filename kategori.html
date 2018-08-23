@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Etiketler
+title: Kategoriler
 ---
 
 <div class="home">
@@ -14,7 +14,7 @@ title: Etiketler
 		<h3 class="tag-title" id="{{ tag | slugify }}"># {{ tag }}</h3>
 		<ul class="post-list">
 			{% for post in site.posts %}
-	    {% if post.site.categories contains tag %}
+	    {% if post.categories contains tag %}
 			<li>
 				<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
 			</li>
