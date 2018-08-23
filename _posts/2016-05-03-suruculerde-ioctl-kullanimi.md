@@ -1,5 +1,6 @@
 ---
 title: Sürücülerde IOCTL Kullanımı
+categories: Bilgisayar
 ---
 
 Selamlar.
