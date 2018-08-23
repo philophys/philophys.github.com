@@ -1,5 +1,6 @@
 ---
 title: Kilitler, Kilitlenme ve Eşzamanlama
+categories: Bilgisayar
 ---
 
 Selamlar.
