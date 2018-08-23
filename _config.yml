@@ -1,0 +1,22 @@
+title: ring0.info
+url: https://ring0.info
+
+permalink: /posts/:title
+
+kramdown:
+  input: GFM
+permalink: pretty
+
+disqus_shortname: 
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+exclude: ["CNAME"]
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "post"

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <div class="page-content">
+      {{ content }}
+      <div class="copyright">
+        <p><span class="copyleft">&copy;</span> {{ site.time | date: '%Y' }} <a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}"><strong>{{ site.title }}</strong></a> ―  Hiçbir hakkı saklı değildir, amme hizmetidir.</p>
+      </div>
+    </div>
+  </body>
+</html>
