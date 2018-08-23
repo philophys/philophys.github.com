@@ -1,6 +1,6 @@
 ---
 title: WÇÇ - Hafızaya Yetkisiz Yazım
-tags: [Bilgisayar, Windows, Çekirdek Modu]
+categories: Bilgisayar
 ---
 
 Sayın çekirdek severler, yazı dizimizin üçüncü yazısından herkese selamlar. Bu yazıda sağı solu zafiyet dolu olan **HEVD** sürücümüzdeki bir başka zafiyet türünü inceleyeceğiz. Bu yazının konusu ise kullanıcı modundan, çekirdek modundaki bir alana yetkisiz bir şekilde yazma yapmamızı sağlayan, tarzancada "Arbitary Memory Write" yahu "*Write, What, Where*" olarak bilinen ve dilimize Hafızaya Yetkisiz Yazım yahut Yazar; Nereye, Ne Yazar (YNNY) olarak -hehe- çevirebileceğimiz bir zafiyet türü.
