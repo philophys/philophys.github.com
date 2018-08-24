@@ -1,5 +1,6 @@
 ---
 title: UPX Manuel Olarak Unpack Etmek
+categories: Bilgisayar
 ---
 
 UPX birkaç çalıştırılabilir dosya formatını destekleyen küçük boyutlu bir pack yazılımıdır. Bu yazıda UPX ile paketlenmiş bir çalıştırılabilir dosyayı manuel olarak unpack etmeyi göstermeye çalışıcam.
