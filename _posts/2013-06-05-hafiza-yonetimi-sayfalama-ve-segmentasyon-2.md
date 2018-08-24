@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hafıza yönetimi, Sayfalama ve Segmentasyon 2
+categories: Bilgisayar
 ---
 
 Tekrardan merhabalar, serinin 2. yazısının 2. bölümüne hoşgeldiniz :) Giriş biraz değişik mi oldu ne ? Şimdiki yazıda kaldığımız yerden yani sayfalama mekanizmasından devam ediyoruz. Fakat öncelikle ben yine bir müzik tavsiye edeyim sizlere, [buyurun.](http://www.youtube.com/watch?v=cTjF2_-bneM) En son sayfa dizini ve sayfa tablolarından bahsetmiştik. Sayfa tablolarına, sayfa dizinleri sayesinden erişebildiğimizi söylemiştim sanırım. Peki sayfa dizinlerine nasıl erişebiliyoruz ? Serinin [ilk yazısını](/posts/korumali-mod-ve-i386-mimarisi/) okuduysanız en sona doğru sizlere bir **CR3** isimli yazmaçtan bahsetmiş, görevi hakkında kısa bir bilgi vermiştim. Evet sayfa dizinlerinin fiziksel adresini **CR3** yazmaçı tutar. 
