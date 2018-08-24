@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Korumalı Modda Erişim Kontrolleri
+categories: Bilgisayar
 ---
 
 Selamlar
