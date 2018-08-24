@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bootloader nedir ? Nasıl yazılır ?
+categories: Bilgisayar
 ---
 
 Selamlar, isletim sistemi gelistirirken ilk yapmanız gererek sey isletim sisteminin açılabilmesi için bir *bootloader* yazmaktır. Bootloader dedigimiz sey **BIOS** tarafından çagırılır ve direkt olarak CPU tarafından çalıstırılır. Ve hafızadaki *ilk* 512 baytlık bir `sector`'de tutulur, 1 *sector* 512 baytlık degere sahip gruplardır. Bu önemli bir ayrıntı çünkü yazılan bootloader'lar bu bölümü asmamalıdır. Bootloader'ın yüklenecegi alan adresi de bellidir : `0x7c00` Örnegin linuxk ernel'ın `boot.s` dosyasına baktıgınızda söyle birsey göreceksiniz.
