@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Linux Process Yapısı
+categories: Bilgisayar
 ---
 
 Merhabalar, yine Linux kernel'de bulunan *Process* yapısından bahsetmek istiyorum biraz. Process yani işlemleri listeleyebilmek için `ps` isimli komutu kullanıyoruz, zaten kendisinin açılımı `process status`'dur. Ornegin `ps -e` yardımı ile aktif olan tum islemleri gorebliirsiniz. Listeye baktıgınızda her isleme verilen bir *PID* degeri vardır, bu deger pozitif bir tamsayı alır. Ayrıca bu numara o an icin tekdir, yani o islem var oldugu surece o *PID* degeri ile baska bir islem calistirilamaz. `ps -e` ciktisina baktiginizda **1** numarali *PID* degerine sahip olan islem *init*'dir, kendisini [buradan](http://lxr.free-electrons.com/source/init/main.c) gorebilirsiniz. Linux uzerinde *PID* degeri dedigimiz islem numarasını tutan `pid_t` isimli `int` deger alan bir degisken tipi vardir. Ornegin calisan programin *PID* degerini donen `getpid()` fonksiyonunun prototipi şöyledir,
