@@ -1,6 +1,7 @@
 ---
 layout: post
 title: İşletim Sistemlerinde Kesme ve İstisna Yönetimi
+categories: Bilgisayar
 ---
 
 Merhabalar
