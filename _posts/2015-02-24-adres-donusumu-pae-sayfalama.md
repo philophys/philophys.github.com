@@ -1,5 +1,6 @@
 ---
 title: Adres Dönüşümü, PAE, Sayfalama
+categories: Bilgisayar
 ---
 
 Selamlar.
