@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hafıza yönetimi, Sayfalama ve Segmentasyon 1
+categories: Bilgisayar
 ---
 
 Serinin *2*. yazısından merhabalar, biraz gecikti bu yazı sınav dolayısıyla zaten kaç kişi yazıları takip ediyor orasıda ayrı o başka bir konu...  Bugün korumalı modun biraz daha derinine ineceğiz ve daha çok *teorik* kısmına bakacağız. Uzun soluklu bir yazı olacağı için sizi [şu müzik](https://www.youtube.com/watch?v=6sHvUv_w18I) eşliğinde okumaya davet ediyorum. Öncelikle korumalı modun hafızayı nasıl yönettiği konularına bir bakalım. Korumalı modda hafıza yönetiminin gerçekleşmesi sayfalama mekanızmasının aktif olup olmamasına göre farklılık gösterir. Eğer sayfalama **aktif edilmişse** *segmentasyon ve sayfalama* kullanılarak, **aktif değilse** yalnızca *segmentasyon* kullanılarak hafıza yönetimi gerçekleştirilir. Segmentasyon sayesinde tüm prosessler birbirlerinden ayrı ayrı gerçekleştirilir. Tüm işlemler kendi segmentlerinde çalışır fakat yinede segment dışına çıkma olayları görülmektedir. Sayfalama sayesinde işlemlere sanal bellek tahsis edilir. Çalışan prosess'e ait sayfa dizini ve sayfa tabloları ile lineer adresler fiziksel adreslere dönüştürülür. 
