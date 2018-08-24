@@ -1,5 +1,6 @@
 ---
 title: API Çağrıları, System Call Dispatcher ve Dahası
+categories: Bilgisayar
 ---
 
 Merhabalar, bu gidişatı başından iyi gözükmeyen yazıda sizlere her gün kullandığınız Windows işletim sisteminin siz onu kullanırken arka tarafta gerçekleştirdiği belki de milyonlarca API çağrısının basitçe nasıl gerçekleştiğini göstermeye çalışıcam. İnanın temelde çok basit bir mantık üzerine kurulmuş fakat debug ederken girip çıktığınız dallanmalar işi epey uzatmıyor değil, ama yine de inceleyip debug ederken ben çok zevk aldım, aynısını yaşayacağınızı da umuyorum. Neyse!
