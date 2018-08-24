@@ -35,9 +35,13 @@
  * Site header
  */
 .site-header {
-    border-bottom: 1px solid $grey-color-light;
+    /*border-bottom: 1px solid $grey-color-light;
     margin-top: -2rem;
-    max-width: $max-width;
+    max-width: $max-width; */
+    max-width: 20rem;
+    margin-top: 1rem;
+    position: fixed;
+    left: 870px;
     p {
       font-size: $small-font-size;
     }
@@ -190,4 +194,14 @@
       color: $grey-color-dark;
     }
   }
+}
+
+@media only screen and (max-width: 1260px) {
+    .site-header {
+        position: relative;
+        left: auto;
+        padding: 0;
+        max-width: 53rem;
+        border-bottom: 1px solid #eaeaea;
+    }
 }
