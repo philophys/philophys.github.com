@@ -49,6 +49,12 @@
         font-size: 1.1rem;
     }
 }
+.home .site-header {
+    border-bottom: 1px solid $grey-color-light;
+    margin-top: -2rem;
+    max-width: $max-width;
+    position: inherit;
+}
 
 .smallcap {
     //text-transform: lowercase;
