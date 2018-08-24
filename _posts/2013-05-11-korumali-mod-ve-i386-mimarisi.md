@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Korumalı Mod ve i386 Mimarisi
+categories: Bilgisayar
 ---
 
 Korumalı mod bellekte yapılan işlemlerin kontrollu bir şekilde yapılmasını sağlayan bir sistemdir. Intel işlemcileri genel olarak *16* bitlik (Gerçek Mod) bir işlemci gibi çalışırlar, Gerçek modda koruma mekanızması yoktur, korumanın devreye sokulması programcı tarafından *32* bit yani Korumalı moda geçilerek yapılır. Peki bu modların birbirlerinden farkı nedir ? Hangisinde ne var ne yok bi bakalım.
