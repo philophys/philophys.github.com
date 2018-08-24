@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Debugging'e Giriş
+categories: Bilgisayar
 ---
 
 Merhaba, bir süredir elimin yanması nedeniyle devam edemediğim tersine mühendislk yazılarına ellerimin açılması ile fırsat buldum sonunda. Bu yazıda hata ayıklamaya (debugging) giriş yapacağız. Debugging yapmak için önünüzde birçok alternatif program var. Bunlardan en çok bilineni önceki yazıdan hatırlayacağınız üzere OllyDbg ve Immunity debugger. Ben yazılarda Immunity debugger kullanacağım. Zaten ikisinin arasında kullanım açısından pek fark yok. Siz size uygun olanı seçebilirsiniz. Öncelikle kullanacağımız programı biraz tanımakta fayda var. Genel itibariyle şöyle bir görünüme sahip.
