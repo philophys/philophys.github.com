@@ -1,5 +1,6 @@
 ---
-title: Zw ve Nt Öntakılarının Farkı Nedir? 
+title: Zw ve Nt Öntakılarının Farkı Nedir?
+categories: Bilgisayar
 ---
 
 Tekrar merhabalar, iki gün evvel yazdığım yazından sonra bahsettiğim konuyu da hemen aradan çıkarmak istedim. Zaten fazla teknik bir şey olmadığı için uzun bir yazı olmayacak ama aradaki farkı anlatabilmeyi umuyorum. 
