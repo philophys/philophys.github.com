@@ -1,6 +1,7 @@
 ---
 layout: post
-title: PE Başlığı ve Export Table 
+title: PE Başlığı ve Export Table
+categories: Bilgisayar
 ---
 
 Çalıştırılabilir bir dosyanın yapısını anlamak tersine mühendislik ile ilgilenecek insanlar için gerçekten önemli bir konu. Bu yazı, bu çalıştırılabilir dosyaların başlıkları hakkında olacak diye umuyorum.
