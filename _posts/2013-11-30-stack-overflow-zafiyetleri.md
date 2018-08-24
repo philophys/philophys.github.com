@@ -4,14 +4,14 @@ title: Stack Overflow Zafiyetleri
 categories: Bilgisayar
 ---
 
-*Low-level* guvenlik zafiyetlerinde belkide en cok gorulen acik turlerinden biri olan stack overflow hakkinda bir iki ufak sey karalamak istiyorum uzun aradan sonra, cumle de cok degisik oldu. Simdi oncelikle bu cok degerli arkadasimiz stack denilen bir bolge ile ilgili oldugundan once onu bir acikliga kavusturalim.
+*Low-level* guvenlik zafiyetlerinde belki de en cok gorulen acik turlerinden biri olan stack overflow hakkinda bir iki ufak sey karalamak istiyorum uzun aradan sonra, cumle de cok degisik oldu. Simdi oncelikle bu cok degerli arkadasimiz stack denilen bir bolge ile ilgili oldugundan once onu bir acikliga kavusturalim.
 
 ## Stack ? O da nesi ?
 **Stack**, *data*, *code* segmenti gibi bir segmenttir. Resmi görelim.
 
 ![](/files/stac1.jpg)
 
-Stack'i biraz daha dışlanmış gibi düşünebiliriz aslında. *Stack* bir nevi işi düştüğünde gidilen dost gibidir. Bu nasıl tabir ya ?! Herneyse, bu segmentte mesela işlem sırasında bir fonksiyon çağırdınız, veya fonksiyon içerisinde değişkenler var bu zamanlarda buraya başvuruyoruz. Örneğin **C** dili ile bir program yazdınız ve programınızda bazı yerel değişkenler var, işte bu burada tutuluyor, programınızda bir fonksiyon çağırdınız bu fonksiyonun istediği parametreler ve fonksiyondan sonra geri döneceğiniz adres yine burada saklaniyor. Bunu en iyi [İbrahim Balic](http://ibrahimbalic.com/2013/fuzzerfuzzing-kavrami-ve-guvenlik-zafiyetleri-bolum-1/) tarafindan yazilan yazidaki bir resimle ifade edebilirim. Bakınızz.
+Stack'i biraz daha dışlanmış gibi düşünebiliriz aslında. *Stack* bir nevi işi düştüğünde gidilen dost gibidir. Bu segmentte mesela işlem sırasında bir fonksiyon çağırdınız, veya fonksiyon içerisinde değişkenler var bu zamanlarda buraya başvuruyoruz. Örneğin **C** dili ile bir program yazdınız ve programınızda bazı yerel değişkenler var, işte bu burada tutuluyor, programınızda bir fonksiyon çağırdınız bu fonksiyonun istediği parametreler ve fonksiyondan sonra geri döneceğiniz adres yine burada saklaniyor. Bunu en iyi [İbrahim Balic](http://ibrahimbalic.com/2013/fuzzerfuzzing-kavrami-ve-guvenlik-zafiyetleri-bolum-1/) tarafindan yazilan yazidaki bir resimle ifade edebilirim. Bakınızz.
 
 ![](/files/stac2.jpg)
 
