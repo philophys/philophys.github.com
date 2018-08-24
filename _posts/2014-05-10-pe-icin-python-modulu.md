@@ -1,6 +1,7 @@
 ---
 layout: post
 title: PE için python Modülü
+categories: Bilgisayar
 ---
 
 Merhaba, daha önceki bir [yazıda](/posts/pe-basligi-ve-export-table) bahsettiğim PE dosyalar için güzel bir python modülü ile tanıştım kısaca burada da bahsetmek istiyorum belki bir yararı dokunabilir.
