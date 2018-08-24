@@ -1,5 +1,6 @@
 ---
 title: SafeSEH ve Stack Cookie Korumalarının Atlatılması
+categories: Bilgisayar
 ---
 
 Bugüne dek blogda yazdığım yazılarda herhangi bir koruma mekanizması ile uğraşmamıştık. Yani örneğin yazdığımız exploit her zaman çalışıyordu, geri dönüş adreslerimiz vesaire sabitti ve bir sorun teşkil etmiyordu, işimiz kolaydı. Fakat durum aslında öyle değil, neticede işletim sisteminiz sizi o kadar rahat bırakmamak için birtakım önlemler almış durumda. Biraz da bunlara yoğunlaşmaya karar verdim ve sanırım bu yazı bu serinin ilk yazısı olacak.
