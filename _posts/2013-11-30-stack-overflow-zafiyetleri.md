@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Stack Overflow Zafiyetleri
+categories: Bilgisayar
 ---
 
 *Low-level* guvenlik zafiyetlerinde belkide en cok gorulen acik turlerinden biri olan stack overflow hakkinda bir iki ufak sey karalamak istiyorum uzun aradan sonra, cumle de cok degisik oldu. Simdi oncelikle bu cok degerli arkadasimiz stack denilen bir bolge ile ilgili oldugundan once onu bir acikliga kavusturalim.
