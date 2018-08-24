@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Linux Sistem Çagrıları
+categories: Bilgisayar
 ---
 
-Selamlar, onceki post'da da bahsettigim uzere bu defaki konumuz sistem cagriları. Sistem cagrilarindan bahsetmeden once onceki yazıda bahsetmeyi dusundugum
-fakat bahsetmedigim bir iki sey daha gostermek istiyorum. Modul makroları hakkında bir kac sey gosterecegim. Makroları kullanarak init ve cleanup fonksiyonlarını farklı isimler cagirabiliyoruz.
+Selamlar, onceki post'da da bahsettigim uzere bu defaki konumuz sistem cagriları. Sistem cagrilarindan bahsetmeden once onceki yazıda bahsetmeyi dusundugum fakat bahsetmedigim bir iki sey daha gostermek istiyorum. Modul makroları hakkında bir kac sey gosterecegim. Makroları kullanarak init ve cleanup fonksiyonlarını farklı isimler cagirabiliyoruz.
 Bunun icin init_module kısmında `__init yeniIsmi`, cleanup kısmında ise `__exit yeniIsim` seklinde bir kullanim yapiyoruz. Ardından bu yeni fonksiyonları
 module_init() ve module_exit() ile belirtiyoruz. Ornegin, ilk yazıdaki ornek modulu su sekilde degistirebiliriz.
 
