@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Kernel Modülü Programlama
+categories: Bilgisayar
 ---
 
 Bu sıralar biraz daha osdev konularına yoneldigimden ogrendigim seyleri de paylasayım dedim. Kernel modulu dedigimiz sey modulun tam karsiligi oluyor. Yani kernel'a sonradan eklenebilen/cikartilabilen kodlar. Yani bunlar kernel'ı direkt etkilemiyor, reboot atmadan da bunları gelistirebiliyorsunuz. Kısacası bu moduller olmasaydı, her zaman benim yapmaktan zevk aldıgim kernel compile olayını bilgisayarınıza gore 20-30 dk derleme yapmaniz gerekecekti. Standart halde de kernel ile beraber bazı moduller geliyor gormek icin `lsmod` kullanabilirsiniz(`cat /proc/modules`). Kernel'in standart yapısında iki tur loading turu var zaten, birincisi bu moduller yani dynamic loading denilen mevzu, digeride static loading denilen yani direkt kernel icerisinde olan elemanlar. Kernel gelistiricileri modulleri daha cok driver yazmak icin kullaniyorlar, burada ben klasik bir hello world! modulunu gosterecegim.
