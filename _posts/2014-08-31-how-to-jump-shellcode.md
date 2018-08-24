@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Shellcode'a Atlamak
+categories: Bilgisayar
 ---
 
 Basite indirgenirse bulduğunuz bir zafiyet için bir exploit yazarken yapmaya çalıştığınız şey shellcodenuzu **EIP** registeri aracılığıyla işlemek. 
