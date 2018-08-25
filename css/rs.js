@@ -7,6 +7,7 @@ var alintilar = [
       'Evren; hakikati arama peşinde koşmayanlardan kendisini gizler. (<i>Andrey Tarkovsky</i>)',
       'Nasiplendirildiğiniz şeyler şu iğreti hayatın yararından ve süsünden ibarettir. Allah\'ın katındaki ise daha hayırlı ve daha süreklidir. Hâlâ aklınızı işletmeyecek misiniz? (<i>Kasas, 60</i>)',
       'Keçide de sakal var. (<i>Atasözü</i>)',
+      'Bizim yapacağımız şudur: Kuran\'ı önümüze koyar, dikkatle okuruz. İnsandan istediklerini dikkatle not ederiz. Sonra dönüp dünyaya bakarız: Hangi toplum bu değerlerin daha fazlasını hayatına sokmuşsa onun İslam\'dan nasibinin daha çok olduğuna hükmederiz. Bunu yaptığımızda karşımıza çıkacak olan tablo, gerçekten ürpertici olacaktır. Ama unutmayalım ki Kur\'an\'ı ciddiye almanın ilk adımı işte bunu yapmaktır. Çünkü akla kara, aldatanla aldanan, uyuyanla yürüyen ancak o ciddi işin yapılmasından sonra ortaya çıkar... (<i>Yaşar Nuri Öztürk - İslam Nasıl Yozlaştırıldı</i>)',
       'İnsan kendisi söz konusu olduğunda kördür. (<i>Michel Foucault</i>)',
       'Ölçüde ve tartıda hile yapanların vay hâline! (<i>Mutaffifin, 1</i>)',
       'Akletmek Müslümanlar tarafından terk edildi ve bu yüzden zelil bir hale düştüler. (<i>İbn-i Haldun</i>)',
