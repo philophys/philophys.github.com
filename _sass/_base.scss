@@ -197,6 +197,13 @@ hr {
     border-right: 0;
     text-align: center
 }
+.dikkat {
+    border: 2px #c2c6cc solid;
+    background-color: #e6e6e6;
+    padding: .5em 1em;
+    display: inline-block;
+    margin: 0;
+}
 ::-webkit-scrollbar {
   width  : 10px;
   height : 9px;
