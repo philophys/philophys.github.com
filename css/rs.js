@@ -1,6 +1,7 @@
 var alintilar = [
       'Biz sizi yakın bir azap ile uyardık. Bir gündedir ki o, kişi kendi ellerinin önden gönderdiğine bakar ve küfre sapan şöyle der: "Keşke toprak olsaydım!". (<i>Nebe, 40</i>)',
       'Oh be! Ölünce ne kadar rahatladım! (<i>Meraklı Köfteci</i>)',
+      'İnsana <b>düşünmemeyi</b> telkin eden her şey, şeytan vesvesesidir. (<i>Mâtürîdî</i>)',
       'Vicdanı olan, hatasının da bilincindeyse, varsın acı çeksin. (<i>Fyodor Dostoyevski</i>)',
       'Deniz sakin olduğu zaman dümeni herkes tutar. (<i>Publilius Syrus</i>)',
       'Türkiye’de her 4 kişiden biri depresyonda. 2013 yılında yaklaşık 50 milyon kutu antidepresan kullandık. Bu büyük bir felakettir. Çoğumuzun umudu, enerjisi, neşesi yok. Zafer peşinde koşmak, birilerini alt etmek; gönül zenginliği ve ferahlığı getirmiyor. Sonuç ortada: 50 milyon kutu antidepresanı ben mi içtim? (<i>Murat Menteş</i>)',
