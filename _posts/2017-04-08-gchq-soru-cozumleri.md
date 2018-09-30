@@ -7,7 +7,7 @@ Selamlar
 
 Teee 2011 yılında düzenlenen bir yarışma gibi bir şey varmış, ben ise bunu iki gün önce keşfettim. Serbest zamanlarımda uğraştım ve oldukça da zevk aldım. O nedenle blogda da paylaşmaya karar verdim. Bu yarışma gibi olan şey 3 aşamadan oluşuyor ve her aşama birbiriyle ilişkili. Çözüm sırasında tek sorun internet sitesinde lazım olan kısımların artık çalışmıyor olmasıydı fakat onu da sağ olsun *web.archive* arşivlemiş, o nedenle geriye kalan tek şey soruların çözülmesi oluyor... *Öncelikle eğer bu soruları kendiniz de çözmek istiyorsanız lütfen yazıyı şimdi okumayın, önce kendiniz çözmek için uğraşın ve en son seçenek olarak - <u>bu en son seçenekten önce gerekirse günlerce araştırma yapmanız, belki de sayfalarca doküman okumanız gerekebilir hiç fark etmez </u>- çözümlere yönelin.* Sorular nerede derseniz, aşağıdaki ilk resim birinci aşamanın başlangıcıdır... Ulaştığınız istekleri ise [bu](http://www.canyoucrackit.co.uk) adrese göndermeniz gerekiyor fakat şu anda ulaşacağınız adresler erişilemiyor, bu nedenle o adreslere ulaşmak için de *web.archive* servisinden yararlanmanız gerekiyor.
 
-Fikrimce en çok 2. aşamada eğlendim. Lakin şu sıralar aşağı yukarı buna benzer bir şey üzerinde çalıştığım için karşıma bunun çıkması çok hoşuma gitti. Birinci ve üçüncü aşamada ise işin içine bazı kısımlarda şifreleme algoritmaları girdiği için biraz gözüm korkmuştu ama düşündüğüm kadar zor da değilmiş, biraz genel kültür(hehe) gerekiyormuş sadece..
+Fikrimce en çok 2. aşamada eğlendim. Zira şu sıralar aşağı yukarı buna benzer bir şey üzerinde çalıştığım için karşıma bunun çıkması çok hoşuma gitti. Birinci ve üçüncü aşamada ise işin içine bazı kısımlarda şifreleme algoritmaları girdiği için biraz gözüm korkmuştu ama düşündüğüm kadar zor da değilmiş, biraz genel kültür(hehe) gerekiyormuş sadece..
 
 ### Birinci Aşama
 
@@ -17,7 +17,7 @@ Bu ilk aşamada yalnızca bir adet resim verilmiş. O resim de şöyle:
 
 ![](/files/sibur.png)
 
-Resmi ilk gördüğümde aklıma yine şifreleme algoritmaları geldi. Acaba dedim bu bir şifrelenmiş veri midir nedir? Fakat sonra gözüme `90`lar, `eb`ler, `cd` sonra iki yerde tekrarlanan `41 41 41 41`ler (bir de 42'ler) çarptı. Özellikle *41*'li kısmın iki kere geçmesi, aşağıdakinin veri, yukarıdakinin ise o verinin doğrulanmasında kullanılan değer olduğunu düşünmeme neden oldu. Bu sırada *42 42 42 42*'nin bir kere geçmesi de acaba eksik bir şeyler mi var diye şüpheye de düşürdü beni. Son olarak `90`'ın **nop**, `cd`nin **int**, `eb`li şeylerin ise **jmp**' olduğunu bildiğim için buradaki değerlerin bir assembly çıktısı olabileceğini düşündüm. Hatta `cd`den sonraki *80*, bunun `int 80` olabileceğini, haliyle linux altında çalıştırmama gerek olabileceğini aklıma getirdi. Fakat yine oradaki `cc` de oldukça ilginç. Lakin bu `int3` makine koduna denk geliyor ki bu da hata ayıklayıcının duraksamasına yol açan bir makine komutuydu. 
+Resmi ilk gördüğümde aklıma yine şifreleme algoritmaları geldi. Acaba dedim bu bir şifrelenmiş veri midir nedir? Fakat sonra gözüme `90`lar, `eb`ler, `cd` sonra iki yerde tekrarlanan `41 41 41 41`ler (bir de 42'ler) çarptı. Özellikle *41*'li kısmın iki kere geçmesi, aşağıdakinin veri, yukarıdakinin ise o verinin doğrulanmasında kullanılan değer olduğunu düşünmeme neden oldu. Bu sırada *42 42 42 42*'nin bir kere geçmesi de acaba eksik bir şeyler mi var diye şüpheye de düşürdü beni. Son olarak `90`'ın **nop**, `cd`nin **int**, `eb`li şeylerin ise **jmp**' olduğunu bildiğim için buradaki değerlerin bir assembly çıktısı olabileceğini düşündüm. Hatta `cd`den sonraki *80*, bunun `int 80` olabileceğini, haliyle linux altında çalıştırmama gerek olabileceğini aklıma getirdi. Fakat yine oradaki `cc` de oldukça ilginç. Çünkü bu `int3` makine koduna denk geliyor ki bu da hata ayıklayıcının duraksamasına yol açan bir makine komutuydu. 
 
 Test etmek için resimdeki veriyi, dışa aktardım (evet, tek tek elle yazdım).
 
@@ -433,7 +433,7 @@ mov     [esp], eax
 call    crypt
 ```
 
-Dosyanın içerisinde rastladığımız "*hqDTK7b8K2rvw*", ikinci argüman olarak verildiğine göre muhtemeldir ki standart [**crypt**](http://man7.org/linux/man-pages/man3/crypt.3.html) fonksiyonu ile ile şifrelenmiş bir parolanın, şifrelenirken kullanılan "*salt*" değeri.  Demek ki lisans dosyasının devamında bu şifrelenmiş olan esas parola olması gerekiyor. Sonradan çözümlere baktığımda gördüm ki bazı kişiler bu şifreyi kırmayı denemiş ve kırmışlar. Fakat programı analiz ettiğimizde buna gerek olmadığını görebiliyoruz. Lakin esas parola değil, parolanın hali hazırda şifrelenmesi için kullanılan "*salt*" değeri web sayfasına istek atarken kullanılıyor. Parola ise yalnızca programı çalıştırıp da kendiniz bir lisans dosyası oluşturursanız lisans dosyasının kontrol edilmesi sırasında işe yarıyor. O nedenle kırma konusuna hiç girmeden yalnızca kalan veri değişkenlerinin ne olduğunu bulmak ile ilgilenmek bence daha mantıklı.
+Dosyanın içerisinde rastladığımız "*hqDTK7b8K2rvw*", ikinci argüman olarak verildiğine göre muhtemeldir ki standart [**crypt**](http://man7.org/linux/man-pages/man3/crypt.3.html) fonksiyonu ile ile şifrelenmiş bir parolanın, şifrelenirken kullanılan "*salt*" değeri.  Demek ki lisans dosyasının devamında bu şifrelenmiş olan esas parola olması gerekiyor. Sonradan çözümlere baktığımda gördüm ki bazı kişiler bu şifreyi kırmayı denemiş ve kırmışlar. Fakat programı analiz ettiğimizde buna gerek olmadığını görebiliyoruz. Zira esas parola değil, parolanın hali hazırda şifrelenmesi için kullanılan "*salt*" değeri web sayfasına istek atarken kullanılıyor. Parola ise yalnızca programı çalıştırıp da kendiniz bir lisans dosyası oluşturursanız lisans dosyasının kontrol edilmesi sırasında işe yarıyor. O nedenle kırma konusuna hiç girmeden yalnızca kalan veri değişkenlerinin ne olduğunu bulmak ile ilgilenmek bence daha mantıklı.
 
 Peki bu veri[0], veri[1] ve veri[2] değerleri nedir? Burada analiz sırasında lisans dosyası doğrulanmasına müteakip gösterilen şu mesajlar dikkat çekici:
 
@@ -452,9 +452,9 @@ Birinci aşamadan -> `AF C2 BF A3` -> `0xa3bfc2af` <br>
 
 O halde son istek adresi şöyle bir şey oluyor demektir : `/hqDTK7b8K2rvw/a3bfc2af/d2ab1f05/da13f110/key.txt`
 
-Deneyelim fakat buraya da istek yapamıyoruz lakin kaldırmışlar. Fakat öncekilerde yaptığım gibi arşivlenmiş sayfaya ulaştığımda şöyle bir şey elde ediyoruz : `Pr0t3ct!on#cyber_security@12*12.2011+`. Evet, tahmin edebileceğiniz gibi ulaşmamız beklenen cevap bu!
+Deneyelim fakat buraya da istek yapamıyoruz zira kaldırmışlar. Fakat öncekilerde yaptığım gibi arşivlenmiş sayfaya ulaştığımda şöyle bir şey elde ediyoruz : `Pr0t3ct!on#cyber_security@12*12.2011+`. Evet, tahmin edebileceğiniz gibi ulaşmamız beklenen cevap bu!
 
-Bu arada, lisans dosyasından 24 bayt değer okunurken bir uzunluk doğrulaması yapılmıyor :) Yani 24 bayt değil de belki 34827372831 bayt değer okursanız hafıza taşması gibi birtakım gariplikler ortaya çıkabilir... Hatta azcık daha ilerleteyim bunu lakin henüz gevreğim bitmedi hehe. Lisans dosyası kontrol edilirken ilk aşama olan "*qhcg*" ve ikinci aşama olan parolanın doğrulaması gerçekleştirilirse bir adet bayrak değeri 1 yapılıyor.
+Bu arada, lisans dosyasından 24 bayt değer okunurken bir uzunluk doğrulaması yapılmıyor :) Yani 24 bayt değil de belki 34827372831 bayt değer okursanız hafıza taşması gibi birtakım gariplikler ortaya çıkabilir... Hatta azcık daha ilerleteyim bunu çünkü henüz gevreğim bitmedi hehe. Lisans dosyası kontrol edilirken ilk aşama olan "*qhcg*" ve ikinci aşama olan parolanın doğrulaması gerçekleştirilirse bir adet bayrak değeri 1 yapılıyor.
 
 ![](/files/paroladogrulama.png)
 
