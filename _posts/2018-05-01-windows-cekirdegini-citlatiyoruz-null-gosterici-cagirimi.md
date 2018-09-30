@@ -141,7 +141,7 @@ NTSTATUS TriggerNullPointerDereference(IN PVOID UserBuffer) {
 
 #ifdef SECURE
         //
-        // Güvenli: Normalde kodun böyle olması gerekir, lakin ayırdığınız
+        // Güvenli: Normalde kodun böyle olması gerekir, zira ayırdığınız
         // alan ile, o alanda yapacağınız işlem arasında çoook fazla
         // başka işlemler olabilir, o nedenle bu alan harbiden var mı
         // diye kontrol etmek çok çok iyi bir fikir
@@ -346,7 +346,7 @@ if(NtStatus != STATUS_SUCCESS)
 
 ### "*Shellcode*"'da Minik Düzeltme
 
-Hatırlarsanız önceki "*exploit*"imizin sonunda sistemin çökmeden çalışmaya devam edebilmesi için yığını temizleyen bir komut koymuştuk. Şimdiki örneğimizde "*shellcode*"umuzda değişen tek şey artık buna ihtiyaç olmaması. Nedeni gayet basit, lakin artık yığını bozmuyoruz, çalışma nasıl gerekiyorsa o şekilde dışarıdan bir müdahale olmadan devam ediyor. Bu nedenle gerekli temizlikleri fonksiyonun kendisi zaten yapıyor, dolayısıyla bizim ek bir şey yapmamıza gerek yok. Netice olarak bu defa kullanacağımız "*shellcode*"muz şu şekilde:
+Hatırlarsanız önceki "*exploit*"imizin sonunda sistemin çökmeden çalışmaya devam edebilmesi için yığını temizleyen bir komut koymuştuk. Şimdiki örneğimizde "*shellcode*"umuzda değişen tek şey artık buna ihtiyaç olmaması. Nedeni gayet basit, zira artık yığını bozmuyoruz, çalışma nasıl gerekiyorsa o şekilde dışarıdan bir müdahale olmadan devam ediyor. Bu nedenle gerekli temizlikleri fonksiyonun kendisi zaten yapıyor, dolayısıyla bizim ek bir şey yapmamıza gerek yok. Netice olarak bu defa kullanacağımız "*shellcode*"muz şu şekilde:
 
 ```assembly
 [BITS 64]
