@@ -408,7 +408,7 @@ ntdll!_EPROCESS
    ...
 ```
 
-`ActiveProcessLinks` alanı gördüğünz gibi bir `LIST_ENTRY` veri yapısı. Bu ise iyi haber demek, lakin bu eleman sistemde bulunan tüm işlemleri birbirine bağlıyor. Bu sayede işlemler arasında hızlıca gezebiliyoruz. Burada bilmemiz gereken şeylerden biri "*Token*" bilgisini alacağımız işlemin belirteç değeri. Ki, o da çok uzun bir zamandır **4** değeri ile belirtiliyor. Bu durumda işlem listesini gezerek `UniqueProcessId` alanı **4** olan bir veri yapısını arayacağız demektir. Üstteki çıktıda normalde `Token` elemanı `TOKEN` veri tipi ile tanımlanıyor. Fakat burada 64 bit Windows'a özgü bir takla atılmış ona da kısaca değinelim. Burada `Token` elemanı `EX_FAST_REF` veri yapısı ile tanımlanmış. Bu veri yapısı şu şekilde:
+`ActiveProcessLinks` alanı gördüğünz gibi bir `LIST_ENTRY` veri yapısı. Bu ise iyi haber demek, zira bu eleman sistemde bulunan tüm işlemleri birbirine bağlıyor. Bu sayede işlemler arasında hızlıca gezebiliyoruz. Burada bilmemiz gereken şeylerden biri "*Token*" bilgisini alacağımız işlemin belirteç değeri. Ki, o da çok uzun bir zamandır **4** değeri ile belirtiliyor. Bu durumda işlem listesini gezerek `UniqueProcessId` alanı **4** olan bir veri yapısını arayacağız demektir. Üstteki çıktıda normalde `Token` elemanı `TOKEN` veri tipi ile tanımlanıyor. Fakat burada 64 bit Windows'a özgü bir takla atılmış ona da kısaca değinelim. Burada `Token` elemanı `EX_FAST_REF` veri yapısı ile tanımlanmış. Bu veri yapısı şu şekilde:
 
 ```
 3: kd> dt _EX_FAST_REF 
