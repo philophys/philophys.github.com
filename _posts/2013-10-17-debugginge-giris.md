@@ -73,5 +73,5 @@ Ve sonunda *good boy* bizi karşılıyor.
 
 ![](/files/debug12.png)
 
-Ne kadar anlaşılır oldu şüpheliyim, lakin anlatmak gerçekten zor çünkü çok ayrıntı var sanırım videolu anlatımlar daha uygun olacak böyle yazılar için. 
+Ne kadar anlaşılır oldu şüpheliyim, zira anlatmak gerçekten zor -veya, ben yeterince iyi anlayamadım henüz- çünkü çok ayrıntı var sanırım videolu anlatımlar daha uygun olacak böyle yazılar için. 
 
