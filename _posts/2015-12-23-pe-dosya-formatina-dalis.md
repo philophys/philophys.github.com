@@ -11,7 +11,7 @@ Bir de şunu söyleyeyim, nasıl ki evrene baktığınızda her şey muazzam bir
 
 ## PE nedir? Türleri nelerdir?
 
-**PE**, eski 16 bit dosya formatı olan **MZ** formatının geliştirilmiş hâlidir. (Merak edenler için **MZ** kısaltması bir *MS-DOS* geliştiricisi ve dosya yapısının mimarı olan [Mark Zbikowski](https://en.wikipedia.org/wiki/Mark_Zbikowski) anısına kullanılıyor.) PE'den önce kullanılan MZ formatı günümüz korumalı işlemcilerine uygun değildi, lakin, o zamanlar bu dosya formatı (MZ) [**8086**](https://tr.wikipedia.org/wiki/Intel_8086) mimarisi için tasarlanmıştı bu nedenle günümüz işlemcilerinin korumalı moduna destek verecek biçimde tasarlanmamıştı. İşte bunun sonucu olarak *Microsoft* vuku bulan beklentileri karşılamak için yeni PE dosya formatını geliştirdi.
+**PE**, eski 16 bit dosya formatı olan **MZ** formatının geliştirilmiş hâlidir. (Merak edenler için **MZ** kısaltması bir *MS-DOS* geliştiricisi ve dosya yapısının mimarı olan [Mark Zbikowski](https://en.wikipedia.org/wiki/Mark_Zbikowski) anısına kullanılıyor.) PE'den önce kullanılan MZ formatı günümüz korumalı işlemcilerine uygun değildi, zira, o zamanlar bu dosya formatı (MZ) [**8086**](https://tr.wikipedia.org/wiki/Intel_8086) mimarisi için tasarlanmıştı bu nedenle günümüz işlemcilerinin korumalı moduna destek verecek biçimde tasarlanmamıştı. İşte bunun sonucu olarak *Microsoft* vuku bulan beklentileri karşılamak için yeni PE dosya formatını geliştirdi.
 
 Günümüzde bu formatı bilgisayarda çalışan birçok dosyada görebiliyoruz. Örneğin **DLL**, **SCR**, **COFF**, **OCX**, **OBJ**, **SYS**(evet, sürücüler de) gibi dosya türleri yine baz olarak PE yapısını kullanmaktadır. Yine günümüzde **PE** yapısının *64* bit desteğinin sağlanabilmesi için **PE+** adı verilen *64* bit destekli PE dosya formatı da geliştirilmiştir. (Ne kurumsal bi dil oldu bu yahu?) 
 
@@ -615,7 +615,7 @@ Burada yine gördüğünüz peşpeşe olan yapılar aslında bizim `IMAGE_TRUNK_
 
 ![](/files/kernel32imponmem.png)
 
-Bu defa gördüğünüz gibi fonksiyonların adresleri gereken yerlere koyulmuş. İşte bunu işletim sisteminin PE yükleyici gerçekleştiriyor. Kullanıcı modu(User-Mode) tarafındaki birçok taklayı da bu tabloyu kullanarak atabiliyorsunuz. Mesela buradaki bir fonksiyonun adresi, sizin belirleyeceğiniz bir adres ile değişse ne olur? IAT Kancalama olur ehehe. Bunun nasıl yapılabileceği gibi ayrıntılara girmiyorum lakin bunların iyi niyetle kullanılacağından pek emin değilim.
+Bu defa gördüğünüz gibi fonksiyonların adresleri gereken yerlere koyulmuş. İşte bunu işletim sisteminin PE yükleyici gerçekleştiriyor. Kullanıcı modu(User-Mode) tarafındaki birçok taklayı da bu tabloyu kullanarak atabiliyorsunuz. Mesela buradaki bir fonksiyonun adresi, sizin belirleyeceğiniz bir adres ile değişse ne olur? IAT Kancalama olur ehehe. Bunun nasıl yapılabileceği gibi ayrıntılara girmiyorum zira bunların iyi niyetle kullanılacağından pek emin değilim.
 
 ### Resource Dizini
 
