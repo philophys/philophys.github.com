@@ -69,7 +69,7 @@ Birlik olarak tanımlandığı için **CombinedApcDisable** alanının hem norma
 
 APCler bir işlemin, belli bir işlemciğin (ve doğal olarak işlemin ) sanal adres alanında yapılması gerektiği durumlarda kullanılırlar diyebiliriz. Örneğin bir işlemciğin duraklatılması(suspend) veya devam ettirilmesi(resume) sırasında, işlemciğin bağlam alanı(thread context) yapısı alınıp tekrar tanımlandığında, veya bir DLL enjeksiyonu yapılması, bir işlemin sanal adres alanında başka bir işlemcik çalıştırmak istendiğinde APCler kullanılabilir. Bunun dışında G/Ç işlemlerinde IRP'lerin işlenmesinde de kullanılırlar.
 
-Örneğin *ReadFileEx*, *WriteFileEx* fonksiyonları eşzamanlı olmayan G/Ç işlemleri yaparken kullanıcıya bir "tamamlama rutini" belirleme özelliği sunarlar. Bu tamamlama rutini G/Ç işlemi bittikten sonra G/Ç yöneticisi tarafından bir kullanıcı modu APCsi kullanılarak çalıştırılır. Tabi bu çalışma hemen olmayabilir lakin kullanıcı modu APClerinin çalışabilmesi için işlemciğin "*alertable wait*" durumunda olması gerekmektedir. Bu duruma gelmek için işlemcik *SleepEx()*, *SignalObjectAndWait()*, *MsgWaitForMultipleObjectsEx()*, *WaitForMultipleObjectsEx()*, veya *WaitForSingleObjectEx()* gibi fonksiyonlar kullanılabilir.  
+Örneğin *ReadFileEx*, *WriteFileEx* fonksiyonları eşzamanlı olmayan G/Ç işlemleri yaparken kullanıcıya bir "tamamlama rutini" belirleme özelliği sunarlar. Bu tamamlama rutini G/Ç işlemi bittikten sonra G/Ç yöneticisi tarafından bir kullanıcı modu APCsi kullanılarak çalıştırılır. Tabi bu çalışma hemen olmayabilir zira kullanıcı modu APClerinin çalışabilmesi için işlemciğin "*alertable wait*" durumunda olması gerekmektedir. Bu duruma gelmek için işlemcik *SleepEx()*, *SignalObjectAndWait()*, *MsgWaitForMultipleObjectsEx()*, *WaitForMultipleObjectsEx()*, veya *WaitForSingleObjectEx()* gibi fonksiyonlar kullanılabilir.  
 
 Biraz daha psikopatlaşmak isterseniz şunları da ekleyeyim. İşletim sistemindeki bir çok mekanizma sistemin tamamına yayılmış durumdadır. Yani mesela IRQL seviyesinin **APC_LEVEL** çıkması/düşmesi sistemin bir çok yerinde olabileceği gibi programcı tarafından da yapılabilir. Mesela az önceki fonksiyonun zıttı işlemi yapan *KeLeaveGuardedRegion()* bakalım bi.
 
@@ -103,7 +103,7 @@ typedef struct _KAPC_STATE
 } KAPC_STATE, *PKAPC_STATE;
 ```
 
-Neticede *KiDeliverApc()* çalıştığı için bu fonksiyona kısaca bir göz atmakta fayda var. Fakat öncelikle `KAPC` yapısını tekrar görsek çok daha yerinde olur lakin bu fonksiyon neticede bu yapılarla uğraşacak, görünen köy, .... uzakta değildir :P
+Neticede *KiDeliverApc()* çalıştığı için bu fonksiyona kısaca bir göz atmakta fayda var. Fakat öncelikle `KAPC` yapısını tekrar görsek çok daha yerinde olur zira bu fonksiyon neticede bu yapılarla uğraşacak, görünen köy, .... uzakta değildir :P
 
 Fonksiyonda birtakım işlemler(hehe uzatmayayım) yapıldıktan sonra öncelikle özel çekirdek APCleri işlenebilir durumda mı kontrol ediliyor, ardından özel APClerin işlenmesi başlıyor. Devamında normal çekirdek APCleri ve son olarak kullanıcı modu APCleri işleniyor.
 
