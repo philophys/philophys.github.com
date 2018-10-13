@@ -1,5 +1,5 @@
 ---
-title: WÇÇ - Hafızaya Yetkisiz Yazım
+title: Düşünce Test
 categories: Düşünce
 ---
 
