@@ -1,6 +1,6 @@
 ---
 title: Düşünce Test
-categories: Fikir
+categories: Düşünce
 ---
 
 Ses deneme. 
